@@ -25,10 +25,13 @@
 		        loop: true
 		    });
 
-		    typewriter.typeString('꾸준히 성장하는')
+		    typewriter.typeString('끊임없이 노력하는')
 				.pauseFor(2000)
 		        .deleteAll()
 		        .typeString('협업에 능숙한')
+		        .pauseFor(2000)
+		        .deleteAll()
+		        .typeString('꾸준히 성장하는')
 		        .pauseFor(2000)
 		        
 		        .start();
@@ -75,7 +78,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">About</a></li>
+							<li><a href="#intro">About</a></li>
 							<li><a href="#first">Skills</a></li>
 							<li><a href="#cta">Projects</a></li>
 							<li><a href="#second">Contact</a></li>
@@ -93,13 +96,10 @@
 											<h2>About Me</h2>
 										</header>
 										<p>반갑습니다!<br>
-										어떤 조직에서든 자연스럽게 녹아들어 맡은 바를 수행하고 
-										협업하는 것이 장점인 신입 백엔드 개발자 강성민입니다. 
-										이러한 모습은 주변 지인들에게 믿음과 신뢰를 주었기 때문에 
-										스터디 모임이나 팀 프로젝트를 진행하게 되면 리더를 하는 경우가 많았습니다.
-										팀 프로젝트시 책임감을 가지고 팀원들이 화합할 수 있도록 중간에서 조율하고 
-										지식을 나누며 함께 성장하는 것을 목표로 진행했습니다.
-										팀원들의 발전을 위해 적극적으로 방법을 제시하며 함께 성장하는 개발자가 되겠습니다.
+										어떤 조직에서든 자연스럽게 녹아들어 맡은 바를 수행하고 협업하는 것이 장점인 신입 개발자 강성민입니다. 
+										풀스택 개발을 지향하고 있으며 아직 배울 것이 많지만, 그만큼 더 성장할 수 있음에 감사합니다.
+										다년간의 사회생활로 꼼꼼한 성격과 원활한 소통능력을 가졌습니다. 
+										문제해결과 개선을 즐기며 꾸준히 그리고 함께 성장하는 개발자가 되겠습니다.
 										</p>
 									</div>
 									<span class="image"><img src="./resources/images/pic01.jpg" alt="" /></span>
@@ -115,25 +115,23 @@
 								<div class="zt-span6 last">
 								
 								<div class="zt-skill-bar"><div data-width="65" style=";">JAVA<span>65%</span></div></div>
-								<div class="skill_text"> - 객체지향을 이해하고 이를 소스에 녹여내기 위해 노력함</div>
-								<div class="zt-skill-bar"><div data-width="65" style=";">JSP<span>65%</span></div></div>
-								<div class="skill_text"> - Java Bean 활용 및 DB 입출력, 페이징처리 등을 사용 게시판 구현가능,
-														model1+2 기반 웹사이트 개발 경험 있음 </div>
+								<div class="skill_text"> - 객체지향 개념 활용 가능 , JDBC를 활용한 데이터베이스 연동 가능 , Collection Framework를 활용한 자료구조 구현 가능</div>
+								<div class="zt-skill-bar"><div data-width="65" style=";">JSP / Servlet <span>65%</span></div></div>
+								<div class="skill_text"> - MVC패턴 활용 가능 , DB 연동 및 웹 어플리케이션 구현 가능 , Session, Cookie 활용 가능 <br>
+														 - JSP 영역객체, 자바빈, DAO 및 DTO설계, JSTL, EL 활용 </div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">Spring Framework<span>65%</span></div></div>
 								<div class="skill_text"> - 생성자, 어노테이션을 활용한 의존 주입 활용, MVC 웹 사이트 개발 경험 있음</div>
 								<div class="zt-skill-bar"><div data-width="60" style=";">JavaScript<span>60%</span></div></div>
-								<div class="skill_text"> - 기능 구현에 큰 무리가 없음, 비동기 통신에 대해 이해하며 개발 가능</div>
+								<div class="skill_text"> - JavaScript를 이용한 데이터 유효성 체크 , JSON 데이터 처리 가능 , Ajax를 활용한 비동기 방식 구현</div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">HTML5<span>65%</span></div></div>
-								<div class="skill_text"> - 웹 표준, 웹 접근성 등의 규격에 맞춰 소스를 작성할 수 있음,
-													레이아웃 그림을 보고 소스로 구현해 낼 수 있음</div>
+								<div class="skill_text"> - 웹 표준, 웹 접근성 등의 규격에 맞춰 소스를 작성가능, 
+															레이아웃 그림을 보고 소스로 구현 가능</div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">CSS3<span>65%</span></div></div>
-								<div class="skill_text"> - 레퍼런스를 참고해 애니메이션이나 해상도에 반응하는 디자인 등을 할 수 있음</div>
+								<div class="skill_text"> - 레퍼런스를 참고해 애니메이션이나 해상도에 반응하는 디자인 가능</div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">MySQL<span>65%</span></div></div>
-								<div class="skill_text"> - SQL작성 및 MySQL DataBase 기반 웹사이트 개발경험 있음</div>
+								<div class="skill_text"> - DB 설치 및 SQL 쿼리 작성 가능, DDL / DML / DCL 활용, ERD 작성 , DB 설계 </div>
 								<div class="zt-skill-bar"><div data-width="50" style=";">Oracle<span>50%</span></div></div>
-								<div class="skill_text"> - CRUD, 조인, 서브쿼리 등 SQL 작성가능</div>
-								<div class="zt-skill-bar"><div data-width="60" style=";">jQuery<span>60%</span></div></div>
-								<div class="skill_text"> - 기능 구현에 큰 무리가 없음, 플러그인을 사용하여 웹사이트 개발 경험 있음</div>
+								<div class="skill_text"> - DB 설치 및 SQL 쿼리 작성 가능, DDL / DML / DCL 활용</div>
 								</div>
 								
 							</section>
