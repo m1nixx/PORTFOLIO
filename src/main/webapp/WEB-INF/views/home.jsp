@@ -5,12 +5,14 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+	<!DOCTYPE html>
+	<html>
 	
 	<head>
 		<title>백엔드 개발자 강성민</title>
-		<!-- <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
-		<link rel="stylesheet" href="./resources/assets/css/main.css" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="${pageContext.request.contextPath }/resources/assets/css/main.css" />
 		<!-- <noscript><link rel="stylesheet" href="./resources/assets/css/noscript.css" /></noscript> -->
 	
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
@@ -70,7 +72,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="image"><img src="./resources/images/code.png" alt="" id="imgg"/></span>
+						<span class="image"><img src="${pageContext.request.contextPath }/resources/images/code.png" alt="" id="imgg"/></span>
 						<p id="zero"></p>
 						<h1>신입개발자 강성민 입니다</h1>
 					</header>
@@ -78,10 +80,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro">About</a></li>
-							<li><a href="#first">Skills</a></li>
-							<li><a href="#cta">Projects</a></li>
-							<li><a href="#second">Contact</a></li>
+							<li><a href="#About" class="active">About</a></li>
+							<li><a href="#Skills">Skills</a></li>
+							<li><a href="#Projects">Projects</a></li>
+							<li><a href="#Contact">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -89,7 +91,7 @@
 					<div id="main">
 
 						<!-- Introduction -->
-							<section id="intro" class="main">
+							<section id="About" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
@@ -102,12 +104,12 @@
 										문제해결과 개선을 즐기며 꾸준히 그리고 함께 성장하는 개발자가 되겠습니다.
 										</p>
 									</div>
-									<span class="image"><img src="./resources/images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="${pageContext.request.contextPath }/resources/images/pic01.jpg" alt="" /></span>
 								</div>
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
+							<section id="Skills" class="main special">
 								<header class="major">
 									<h2>Skills</h2>
 								</header>
@@ -115,51 +117,73 @@
 								<div class="zt-span6 last">
 								
 								<div class="zt-skill-bar"><div data-width="65" style=";">JAVA<span>65%</span></div></div>
-								<div class="skill_text"> - 객체지향 개념 활용 가능 , JDBC를 활용한 데이터베이스 연동 가능 , Collection Framework를 활용한 자료구조 구현 가능</div>
+								<div class="skill_text"> 
+								- 객체지향 개념 활용 가능 <br> 
+								- JDBC를 활용한 데이터베이스 연동 가능 <br>
+								- Collection Framework를 활용한 자료구조 구현 가능 </div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">JSP / Servlet <span>65%</span></div></div>
-								<div class="skill_text"> - MVC패턴 활용 가능 , DB 연동 및 웹 어플리케이션 구현 가능 , Session, Cookie 활용 가능 <br>
-														 - JSP 영역객체, 자바빈, DAO 및 DTO설계, JSTL, EL 활용 </div>
+								<div class="skill_text"> 
+								- MVC패턴 활용 가능  <br>
+								- DB 연동 및 웹 어플리케이션 구현 가능  <br>
+								- Session, Cookie 활용 가능 <br>
+								- JSP 영역객체, 자바빈, DAO 및 DTO설계, JSTL, EL 활용 </div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">Spring Framework<span>65%</span></div></div>
-								<div class="skill_text"> - 생성자, 어노테이션을 활용한 의존 주입 활용, MVC 웹 사이트 개발 경험 있음</div>
+								<div class="skill_text"> 
+								- 생성자, 어노테이션을 활용한 의존 주입 활용 <br>
+								- MVC 웹 사이트 개발 경험 있음</div>
 								<div class="zt-skill-bar"><div data-width="60" style=";">JavaScript<span>60%</span></div></div>
-								<div class="skill_text"> - JavaScript를 이용한 데이터 유효성 체크 , JSON 데이터 처리 가능 , Ajax를 활용한 비동기 방식 구현</div>
+								<div class="skill_text"> 
+								- JavaScript를 이용한 데이터 유효성 체크  <br>
+								- JSON 데이터 처리 가능  <br>
+								- Ajax를 활용한 비동기 방식 구현</div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">HTML5<span>65%</span></div></div>
-								<div class="skill_text"> - 웹 표준, 웹 접근성 등의 규격에 맞춰 소스를 작성가능, 
-															레이아웃 그림을 보고 소스로 구현 가능</div>
+								<div class="skill_text"> 
+								- 웹 표준, 웹 접근성 등의 규격에 맞춰 소스를 작성가능 <br>
+								- 레이아웃 그림을 보고 소스로 구현 가능</div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">CSS3<span>65%</span></div></div>
-								<div class="skill_text"> - 레퍼런스를 참고해 애니메이션이나 해상도에 반응하는 디자인 가능</div>
+								<div class="skill_text"> 
+								- 레퍼런스를 참고해 애니메이션이나 해상도에 반응하는 디자인 가능</div>
 								<div class="zt-skill-bar"><div data-width="65" style=";">MySQL<span>65%</span></div></div>
-								<div class="skill_text"> - DB 설치 및 SQL 쿼리 작성 가능, DDL / DML / DCL 활용, ERD 작성 , DB 설계 </div>
+								<div class="skill_text"> 
+								- DB 설치 및 SQL 쿼리 작성 가능 <br>
+								- DDL / DML / DCL 활용, ERD 작성 
+								- DB 설계 </div>
 								<div class="zt-skill-bar"><div data-width="50" style=";">Oracle<span>50%</span></div></div>
-								<div class="skill_text"> - DB 설치 및 SQL 쿼리 작성 가능, DDL / DML / DCL 활용</div>
+								<div class="skill_text"> 
+								- DB 설치 및 SQL 쿼리 작성 가능 </div>
 								</div>
 								
 							</section>
 
 
 						<!-- Get Started -->
-							<section id="cta" class="main special">
+							<section id="Projects" class="main special">
 								<header class="major">
 									<h2>Project</h2>
-									
-									<span><!-- <a href="http://itwillbs6.cafe24.com" target="_blank"> --><img src="./resources/images/joinusLogo.png" alt="" class="pj_logo"/></span>
+									<div>팀프로젝트</div>
+									<span><!-- <a href="http://itwillbs6.cafe24.com" target="_blank"> --><img src="${pageContext.request.contextPath }/resources/images/joinusLogo.png" alt="" class="pj_logo"/></span>
 									<!-- <div class="pj_title"> JOINUS </div> -->
-									<br><br><div >2022.06.27 ~ 2022.07.22<br>
+									<br><br><div >
+									2022.06.27 ~ 2022.07.22<br>
 									지역, 관심사기반 모임서비스 플랫폼
-									</div><br>
+									</div>
+									<div class="pj_text"> 역할 : 메인,모임생성,모임상세 페이지,결제기능 </div>
+									
+									<br>
+									
 									<ul class="actions special">
 										<li><a href="https://github.com/impath96/joinus" target="_blank" class="button primary">GITHUB</a></li>
-										<!-- <li><a href="./resources/images/joinusMain.jpg" target="_blank" class="button">스크린샷</a></li> -->
+										<%-- <li><a href="${pageContext.request.contextPath}/joinus" target="_blank" class="button">스크린샷</a></li> --%>
 									</ul>
 									<ul class="statistics">
 									<li class="">
-										<img src="./resources/images/pj_pic01.JPG" alt="" class="pj_pic"/>
+										<img src="${pageContext.request.contextPath }/resources/images/pj_pic01.JPG" alt="" class="pj_pic"/>
 									</li>
 									<li class="">
-										<img src="./resources/images/pj_pic02.JPG"" alt="" class="pj_pic"/>
+										<img src="${pageContext.request.contextPath }/resources/images/pj_pic02.JPG"" alt="" class="pj_pic"/>
 									</li>
 									<li class="">
-										<img src="./resources/images/pj_pic03.JPG"" alt="" class="pj_pic"/>
+										<img src="${pageContext.request.contextPath }/resources/images/pj_pic03.JPG"" alt="" class="pj_pic"/>
 									</li>
 									<!-- <li class="style4">
 										<span class="icon solid fa-laptop"></span>
@@ -170,8 +194,6 @@
 										<strong>1,024</strong> Nullam
 									</li> -->
 								</ul>
-									
-									
 									
 									<h4 class="pj_subTitle">프로젝트 개요</h4>
 									<div class="pj_text">JAVA, Spring Framework 기반의 MVC Model2 패턴을 적용한 모임 서비스 플랫폼 입니다.<br>
@@ -199,6 +221,65 @@
 									
 									
 									
+									<br><hr><br>
+									<p>개인프로젝트</p>
+									<h1 class="pj_title_Bold"><span class="pj2_title">멍</span>문대학 </h1>
+									<br><div>
+									2022.04.28 ~ 2022.05.30<br>
+									반려견 케어 서비스 홈페이지
+									</div>
+									<br>
+									
+									<!-- <ul class="actions special">
+										<li><a href="https://github.com/impath96/joinus" target="_blank" class="button primary">GITHUB</a></li>
+									</ul> -->
+									<ul class="statistics">
+									<li class="">
+										<img src="${pageContext.request.contextPath }/resources/images/pj2_pic01.JPG" alt="" class="pj_pic"/>
+									</li>
+									<li class="">
+										<img src="${pageContext.request.contextPath }/resources/images/pj2_pic03.JPG"" alt="" class="pj_pic"/>
+									</li>
+									<li class="">
+										<img src="${pageContext.request.contextPath }/resources/images/pj2_pic02.JPG"" alt="" class="pj_pic"/>
+									</li>
+									<!-- <li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>1,024</strong> Nullam
+									</li> -->
+								</ul>
+									
+									<h4 class="pj_subTitle">프로젝트 개요</h4>
+									<div class="pj_text">JAVA, JSP 기반의 MVC Model2 패턴을 적용한 웹 사이트입니다. <br>
+									반려견 케어 서비스 홈페이지로 사용자는 해당 업체의 반려견 케어 서비스에 대해 조회가 가능하며 <br>
+									가입 후 게시판에 문의하거나 해당 업체의 이벤트에 참가메일을 보낼 수 있습니다. </div>
+									
+									<h4 class="pj_subTitle">Language & Framework</h4>
+									<div class="pj_text"> JAVA 8, JSP, HTML 5/CSS 3, Bootstrap, JavaScript, 
+									jQuery, Apache Tomcat 8</div>
+									
+									<h4 class="pj_subTitle">DBMS</h4>
+									<div class="pj_text">MySQL 8</div>
+									
+									<h4 class="pj_subTitle">TOOL</h4>
+									<div class="pj_text">Eclipse neon 4.6, MySQL Workbench 8</div>
+									
+									<h4 class="pj_subTitle">주요 기능</h4>
+									<div class="pj_text"> 회원가입 / 정보수정 / 로그인 / 로그아웃 / 탈퇴   <br>
+										회원제한 게시판 글작성 / 조회 / 수정 / 삭제  <br>
+										메일 발송 
+									</div>
+									
+									
+									
+									
+									
+									
+									
 								</header>
 								
 							</section>
@@ -206,7 +287,7 @@
 
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
+							<section id="Contact" class="main special">
 								<header class="major">
 									<h2>Contact Me</h2>
 									<p> 꾸준히 노력하며 성장하는 개발자가 되겠습니다. <br>
@@ -274,12 +355,15 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="./resources/assets/js/jquery.min.js"></script>
-			<script src="./resources/assets/js/jquery.scrollex.min.js"></script>
-			<script src="./resources/assets/js/jquery.scrolly.min.js"></script>
-			<script src="./resources/assets/js/browser.min.js"></script>
-			<script src="./resources/assets/js/breakpoints.min.js"></script>
-			<script src="./resources/assets/js/util.js"></script>
-			<script src="./resources/assets/js/main.js"></script>
+			<script src="${pageContext.request.contextPath }/resources/assets/js/jquery.min.js"></script>
+			<script src="${pageContext.request.contextPath }/resources/assets/js/jquery.scrollex.min.js"></script>
+			<script src="${pageContext.request.contextPath }/resources/assets/js/jquery.scrolly.min.js"></script>
+			<script src="${pageContext.request.contextPath }/resources/assets/js/browser.min.js"></script>
+			<script src="${pageContext.request.contextPath }/resources/assets/js/breakpoints.min.js"></script>
+			<script src="${pageContext.request.contextPath }/resources/assets/js/util.js"></script>
+			<script src="${pageContext.request.contextPath }/resources/assets/js/main.js"></script>
 
 	</body>
+
+	</html>
+	
