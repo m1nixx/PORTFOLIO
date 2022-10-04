@@ -148,7 +148,7 @@
 								- DB 설치 및 SQL 쿼리 작성 가능 <br>
 								- DDL / DML / DCL 활용, ERD 작성 
 								- DB 설계 </div>
-								<div class="zt-skill-bar"><div data-width="50" style=";">Oracle<span>50%</span></div></div>
+								<div class="zt-skill-bar"><div data-width="60" style=";">Oracle<span>60%</span></div></div>
 								<div class="skill_text"> 
 								- DB 설치 및 SQL 쿼리 작성 가능 </div>
 								</div>
@@ -173,7 +173,7 @@
 									
 									<ul class="actions special">
 										<li><a href="https://github.com/impath96/joinus" target="_blank" class="button primary">GITHUB</a></li>
-										<%-- <li><a href="${pageContext.request.contextPath}/joinus" target="_blank" class="button">스크린샷</a></li> --%>
+										<li><a href="http://itwillbs6.cafe24.com" target="_blank" class="button">LINK</a></li>
 									</ul>
 									<ul class="statistics">
 									<li class="">
@@ -304,7 +304,9 @@
 									</li>
 									<li class="style3">
 										<span class="icon "> &#128204;</span>
-										<strong>Github</strong> https://github.com/m1nixx
+										<strong>Github</strong> 
+										<a href="https://github.com/m1nixx" target="_blank">https://github.com/m1nixx</a>
+										
 									</li>
 									<!-- <li class="style4">
 										<span class="icon solid fa-laptop"></span>
